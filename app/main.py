@@ -21,7 +21,6 @@ def main(book: Book, commands: list[tuple[str, str]]) -> None | str:
                 return JSONSerializer().serialize(book)
             elif method_type == "xml":
                 return XMLSerializer().serialize(book)
-            # return book.serialize(method_type)
 
 
 if __name__ == "__main__":
